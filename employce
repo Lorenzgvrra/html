@@ -1,0 +1,237 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Employee Information Form
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Use a monospace font for underscores to align better */
+    .underline-input {
+      font-family: monospace;
+      letter-spacing: 0.1em;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black font-sans p-6 sm:p-10 md:p-20">
+  <main class="max-w-3xl mx-auto">
+   <h1 class="font-extrabold text-center text-xl sm:text-2xl md:text-3xl mb-4">
+    EMPLOYEE INFORMATION FORM
+   </h1>
+   <hr class="border-2 border-black mb-8"/>
+   <section class="mb-6">
+    <h2 class="font-bold mb-1 text-sm sm:text-base">
+     Personal Information
+    </h2>
+    <p class="mb-1 text-sm sm:text-base">
+     Full Name:
+     <span class="underline-input">
+      ______________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Address:
+     <span class="underline-input">
+      ____________________
+     </span>
+     ,
+     <span class="underline-input">
+      _____________
+     </span>
+     ,
+     <span class="underline-input">
+      ________
+     </span>
+     <span class="underline-input">
+      __________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Phone Number:
+     <span class="underline-input">
+      ____________________
+     </span>
+     Email:
+     <span class="underline-input">
+      __________________
+     </span>
+    </p>
+   </section>
+   <section class="mb-6">
+    <h2 class="font-bold mb-1 text-sm sm:text-base">
+     Employment Information
+    </h2>
+    <p class="mb-1 text-sm sm:text-base">
+     Title:
+     <span class="underline-input">
+      ____________________
+     </span>
+     Department:
+     <span class="underline-input">
+      ____________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Date of Hire:
+     <span class="underline-input">
+      ____________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Employment Status:
+     <span class="inline-flex items-center mr-3">
+      <input class="mr-1" type="checkbox"/>
+      Full Time
+     </span>
+     <span class="inline-flex items-center mr-3">
+      <input class="mr-1" type="checkbox"/>
+      Part Time
+     </span>
+     <span class="inline-flex items-center mr-3">
+      <input class="mr-1" type="checkbox"/>
+      Contractor
+     </span>
+     <span class="inline-flex items-center mr-3">
+      <input class="mr-1" type="checkbox"/>
+      Intern
+     </span>
+     <span class="inline-flex items-center">
+      <input class="mr-1" type="checkbox"/>
+      Other:
+      <span class="underline-input ml-1">
+       ______________
+      </span>
+     </span>
+    </p>
+   </section>
+   <section class="mb-6">
+    <h2 class="font-bold mb-1 text-sm sm:text-base">
+     Education
+    </h2>
+    <p class="mb-1 text-sm sm:text-base">
+     Highest Level of Education Completed:
+     <span class="underline-input">
+      ________________________________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base flex flex-wrap gap-4">
+     <span>
+      Name of Institution:
+      <span class="underline-input">
+       ____________________
+      </span>
+     </span>
+     <span>
+      Degree Earned:
+      <span class="underline-input">
+       ____________________
+      </span>
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base flex flex-wrap gap-4">
+     <span>
+      Major/Field of Study:
+      <span class="underline-input">
+       ____________________
+      </span>
+     </span>
+     <span>
+      Graduation Date:
+      <span class="underline-input">
+       ____________________
+      </span>
+     </span>
+    </p>
+   </section>
+   <section class="mb-6">
+    <h2 class="font-bold mb-1 text-sm sm:text-base">
+     Professional Experience
+    </h2>
+    <p class="mb-1 text-sm sm:text-base">
+     Professional Certificates and Licenses:
+     <span class="underline-input">
+      ________________________________________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Previous Work Experience:
+    </p>
+    <p class="mb-1 text-sm sm:text-base underline-input">
+     ____________________________________________________________________________________________
+    </p>
+    <p class="mb-1 text-sm sm:text-base underline-input">
+     ____________________________________________________________________________________________
+    </p>
+    <p class="mb-1 text-sm sm:text-base underline-input">
+     ____________________________________________________________________________________________
+    </p>
+   </section>
+   <section class="mb-6">
+    <h2 class="font-bold mb-1 text-sm sm:text-base">
+     Emergency Contact Information
+    </h2>
+    <p class="mb-1 text-sm sm:text-base">
+     Full Name:
+     <span class="underline-input">
+      ______________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Address:
+     <span class="underline-input">
+      ____________________
+     </span>
+     ,
+     <span class="underline-input">
+      _____________
+     </span>
+     ,
+     <span class="underline-input">
+      ________
+     </span>
+     <span class="underline-input">
+      __________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Phone Number:
+     <span class="underline-input">
+      ____________________
+     </span>
+     Cell Phone Number:
+     <span class="underline-input">
+      __________________
+     </span>
+    </p>
+    <p class="mb-1 text-sm sm:text-base">
+     Relationship:
+     <span class="underline-input">
+      ________________________________________________________________
+     </span>
+    </p>
+   </section>
+   <section class="mb-12 flex justify-start gap-20 sm:gap-40">
+    <div class="underline-input">
+     ____________________
+    </div>
+    <div class="underline-input">
+     ____________________
+    </div>
+   </section>
+   <section class="mb-12 flex justify-start gap-20 sm:gap-40 text-sm sm:text-base">
+    <div>
+     Employee Signature
+    </div>
+    <div>
+     Date
+    </div>
+   </section>
+   <footer>
+    <img alt="Small black logo with letter L and a square shape" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/7bdb1d95-4ff4-4890-54f2-b2dd5b635a12.jpg" width="24"/>
+   </footer>
+  </main>
+ </body>
+</html>
