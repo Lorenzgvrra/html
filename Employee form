@@ -1,0 +1,159 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Employee Information Form
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* monospace font for underscores */
+    .underline-input {
+      font-family: monospace;
+      letter-spacing: 0.1em;
+    }
+    /* remove default checkbox styling for better alignment */
+    input[type="checkbox"] {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black font-sans p-6 sm:p-10 md:p-20">
+  <main class="max-w-3xl mx-auto">
+   <h1 class="font-extrabold text-center text-xl sm:text-2xl md:text-3xl mb-4">
+    EMPLOYEE INFORMATION FORM
+   </h1>
+   <hr class="border-2 border-black mb-8"/>
+   <form id="employeeForm" class="space-y-6" onsubmit="handleSubmit(event)">
+    <section>
+     <h2 class="font-bold mb-1 text-sm sm:text-base">
+      Personal Information
+     </h2>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="fullName">Full Name:</label>
+      <input autocomplete="name" class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="fullName" name="fullName" required="" type="text"/>
+     </div>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="address1">Address:</label>
+      <input autocomplete="address-line1" class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="address1" name="address1" required="" type="text"/>
+     </div>
+     <div class="mb-2 flex flex-wrap gap-2">
+      <input autocomplete="address-line2" class="flex-grow border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="address2" name="address2" type="text" placeholder="Address Line 2"/>
+      <input autocomplete="address-level2" class="flex-grow border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="city" name="city" type="text" placeholder="City"/>
+      <input autocomplete="address-level1" class="flex-grow border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="state" name="state" type="text" placeholder="State"/>
+     </div>
+     <div class="mb-2 flex flex-wrap gap-4">
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="phoneNumber">Phone Number:</label>
+       <input autocomplete="tel" class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="phoneNumber" name="phoneNumber" required="" type="tel"/>
+      </div>
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="email">Email:</label>
+       <input autocomplete="email" class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="email" name="email" required="" type="email"/>
+      </div>
+     </div>
+    </section>
+    <section>
+     <h2 class="font-bold mb-1 text-sm sm:text-base">
+      Employment Information
+     </h2>
+     <div class="mb-2 flex flex-wrap gap-4">
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="title">Title:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="title" name="title" type="text" required=""/>
+      </div>
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="department">Department:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="department" name="department" type="text" required=""/>
+      </div>
+     </div>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="dateOfHire">Date of Hire:</label>
+      <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="dateOfHire" name="dateOfHire" type="date" required=""/>
+     </div>
+     <fieldset class="mb-2">
+      <legend class="font-semibold text-sm sm:text-base mb-1">Employment Status:</legend>
+      <div class="flex flex-wrap gap-6 text-sm sm:text-base">
+       <label class="inline-flex items-center gap-1">
+        <input name="employmentStatus" type="checkbox" value="Full Time"/>
+        Full Time
+       </label>
+       <label class="inline-flex items-center gap-1">
+        <input name="employmentStatus" type="checkbox" value="Part Time"/>
+        Part Time
+       </label>
+       <label class="inline-flex items-center gap-1">
+        <input name="employmentStatus" type="checkbox" value="Contractor"/>
+        Contractor
+       </label>
+       <label class="inline-flex items-center gap-1">
+        <input name="employmentStatus" type="checkbox" value="Intern"/>
+        Intern
+       </label>
+       <label class="inline-flex items-center gap-1">
+        <input id="otherStatusCheckbox" name="employmentStatus" type="checkbox" value="Other"/>
+        Other:
+       </label>
+       <input class="border-b border-black bg-transparent font-mono tracking-widest py-1 w-40 text-sm sm:text-base" id="otherStatusText" name="otherStatusText" placeholder="Specify" type="text" disabled=""/>
+      </div>
+     </fieldset>
+    </section>
+    <section>
+     <h2 class="font-bold mb-1 text-sm sm:text-base">
+      Education
+     </h2>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="educationLevel">Highest Level of Education Completed:</label>
+      <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="educationLevel" name="educationLevel" type="text" required=""/>
+     </div>
+     <div class="mb-2 flex flex-wrap gap-4">
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="institutionName">Name of Institution:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="institutionName" name="institutionName" type="text" required=""/>
+      </div>
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="degreeEarned">Degree Earned:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="degreeEarned" name="degreeEarned" type="text" required=""/>
+      </div>
+     </div>
+     <div class="mb-2 flex flex-wrap gap-4">
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="majorField">Major/Field of Study:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="majorField" name="majorField" type="text" required=""/>
+      </div>
+      <div class="flex-grow">
+       <label class="block text-sm sm:text-base" for="graduationDate">Graduation Date:</label>
+       <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="graduationDate" name="graduationDate" type="date" required=""/>
+      </div>
+     </div>
+    </section>
+    <section>
+     <h2 class="font-bold mb-1 text-sm sm:text-base">
+      Professional Experience
+     </h2>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="certificatesLicenses">Professional Certificates and Licenses:</label>
+      <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="certificatesLicenses" name="certificatesLicenses" type="text"/>
+     </div>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="previousWorkExperience">Previous Work Experience:</label>
+      <textarea class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base resize-none h-24" id="previousWorkExperience" name="previousWorkExperience" rows="4"></textarea>
+     </div>
+    </section>
+    <section>
+     <h2 class="font-bold mb-1 text-sm sm:text-base">
+      Emergency Contact Information
+     </h2>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="emergencyFullName">Full Name:</label>
+      <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="emergencyFullName" name="emergencyFullName" type="text" required=""/>
+     </div>
+     <div class="mb-2">
+      <label class="block text-sm sm:text-base" for="emergencyAddress1">Address:</label>
+      <input class="w-full border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="emergencyAddress1" name="emergencyAddress1" required="" type="text"/>
+     </div>
+     <div class="mb-2 flex flex-wrap gap-2">
+      <input class="flex-grow border-b border-black bg-transparent font-mono tracking-widest py-1 text-sm sm:text-base" id="emergencyAddress2" name="emergencyAddress2" type="text" placeholder="
