@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Photographer Profile</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
       margin: 30px;
       line-height: 1.6;
     }
     .container {
-      border: 1px solid #ccc;
-      padding: 20px;
-      max-width: 900px;
+      border: 10px solid #9c9999;
+      padding: 50px;
+      max-width: 1000px;
       margin: auto;
     }
     .header {
@@ -20,6 +20,7 @@
       justify-content: space-between;
     }
     .profile {
+        font-family: 'Courier New', Courier, monospace;
       display: flex;
     }
     .profile img {
@@ -30,17 +31,14 @@
       background-color: #eee;
     }
     .info {
+        
       flex-grow: 1;
     }
     .info h1 {
+        
       margin-top: 0;
     }
-    .categories {
-      text-align: right;
-    }
-    .categories h4 {
-      margin: 0 0 10px 0;
-    }
+    
     .media {
       display: flex;
       margin-top: 20px;
@@ -73,28 +71,21 @@
   <div class="container">
     <div class="header">
       <div class="profile">
-        <img src="#" alt="Profile Image">
+        <img src="https://feu.instructure.com/images/thumbnails/25911264/zhHVWM1KgfkPJWvqho96NX9xADqB7sJ8YC0TaZUs" alt="Profile Image">
         <div class="info">
-          <h1>Profile Name</h1>
-          <p>245 Blackfriars Road<br>
-          Ludgate House<br>
-          London, SE1 9UY</p>
-          <p>Email: <a href="mailto:firstname@surname.com">firstname@surname.com</a><br>
-          Telephone: 0207 955 3705</p>
+          <h1>Guevarra John Lorenz</h1>
+          <p>157B V.Lara Street<br>
+          Barangay Sumilang<br>
+          Pasig, Philippines</p>
+          <p>Email: <a href="mailto:lorenzguevarra14@gmail.com">lorenzguevarra14@gmail.com</a><br>
+          Telephone: 0906 345 9936</p>
         </div>
-      </div>
-      <div class="categories">
-        <h4>Categories</h4>
-        <p>Lorem ipsum<br>
-        dolor sit<br>
-        amet<br>
-        dolor sit</p>
       </div>
     </div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lectus. Praesent interdum sapien in nisi tempor vestibulum. Mauris nec mauris sapien. Nam laoreet nisi non magna iaculis vitae convallis lorem porttitor.</p>
+    <p>Developed a console-based multiple-choice quiz game written in c++. It allows users to register with their name, answer a set of predifined questions, and get a score based on coreect answers. The program uses functions,arrays, and basic file handling to store scpres and displays results. It demonstrates core programming concepts like conditionals, loops, functions, and user input handling, suitable for a Computer Programming 2 course.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur nibh feugiat urna elementum facilisis. Nullam diam arcu, lobortis ut tincidunt vel, suscipit quis lectus. Praesent interdum sapien in nisi tempor vestibulum. Mauris nec mauris sapien.</p>
+    
 
     <div class="media">
       <div class="media-item">Audio/Video</div>
